@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de Videojuegos</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <h2>🎮 Inventario de Videojuegos</h2>
+    <input type="text" id="titulo" placeholder="Título">
+    <input type="text" id="genero" placeholder="Género">
+    <input type="number" id="precio" placeholder="Precio">
+    <button onclick="agregarJuego()">Agregar</button>
+    <ul id="lista"></ul>
+    <input type="text" id="filtro" placeholder="Filtrar por género">
+    <button onclick="filtrarPorGenero()">Filtrar</button>
+    <button onclick="calcularTotal()">Total Gastado</button>
+</body>
+</html>

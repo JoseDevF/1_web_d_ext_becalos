@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Gastos</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <h2>💰 Control de Gastos</h2>
+    <input type="text" id="descripcion" placeholder="Descripción">
+    <input type="number" id="monto" placeholder="Monto">
+    <button onclick="agregarGasto()">Agregar</button>
+    <ul id="lista"></ul>
+    <button onclick="ordenarGastos()">Ordenar</button>
+    <button onclick="calcularTotal()">Total Gastado</button>
+</body>
+</html>
