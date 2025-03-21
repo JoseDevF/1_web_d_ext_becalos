@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras Animada</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>🛒 Lista de Compras Animada</h2>
+        <div class="input-group">
+            <input type="text" id="producto" placeholder="Añadir producto">
+            <button onclick="agregarProducto()">Agregar</button>
+        </div>
+        <ul class="lista" id="lista"></ul>
+        <button onclick="ordenarLista()">Ordenar A-Z</button>
+        <button onclick="revertirLista()">Revertir Orden</button>
+        <button onclick="eliminarUltimo()">Eliminar Último</button>
+        <button onclick="eliminarPrimero()">Eliminar Primero</button>
+        <button onclick="vaciarLista()">Vaciar Lista</button>
+    </div>
+</body>
+</html>
