@@ -27,7 +27,7 @@ class Viaje {
     }
 
     // Ejemplo con parametros opcionales y además nombrados
-    static mensajeBienvenida({promocion=false, personalizado="", descuento=false, montoDescuento=-1})
+    static mensajeBienvenida({ promocion=false, personalizado="", descuento=false, montoDescuento=-1 })
     {
         const mensajeDescuento = descuento===true && montoDescuento > 0 // Condición para "tomar" el camino del mensaje descuento 
         const mensajePromocion=promocion // Condición para "tomar" el camino del mensaje promoción
@@ -56,10 +56,12 @@ Viaje1.getInfo()
 
 //Viaje.getInfo()
 
+const params = {promocion: true}
+
 // Ejemplos de uso:
-console.log(Viaje.mensajeBienvenida({promocion: true}));
+console.log(Viaje.mensajeBienvenida(params));
 console.log(Viaje.mensajeBienvenida({personalizado: "Esperamos que te guste volar con nosotros"}));
-console.log(Viaje.mensajeBienvenida({descuento: true, montoDescuento: 50}));
+console.log(Viaje.mensajeBienvenida({montoDescuento: 50, descuento: true}));
 console.log(Viaje.mensajeBienvenida({}));
 
 
