@@ -27,7 +27,8 @@ class Viaje {
     }
 
     // Ejemplo con parametros opcionales y además nombrados
-    static mensajeBienvenida({promocion=false, personalizado="", descuento=false, montoDescuento=-1}){
+    static mensajeBienvenida({promocion=false, personalizado="", descuento=false, montoDescuento=-1})
+    {
         const mensajeDescuento = descuento===true && montoDescuento > 0 // Condición para "tomar" el camino del mensaje descuento 
         const mensajePromocion=promocion // Condición para "tomar" el camino del mensaje promoción
         const mensajePersonalizado = personalizado.length > 0 // Condición para "tomar" el camino del mensaje personalizado
@@ -47,6 +48,13 @@ class Viaje {
     }
 }
 
+const Viaje1= new Viaje("CDMX", "Michoacan", 70);
+
+Viaje1.getInfo()
+
+//Viaje1.mensajeBienvenida()
+
+//Viaje.getInfo()
 
 // Ejemplos de uso:
 console.log(Viaje.mensajeBienvenida({promocion: true}));
