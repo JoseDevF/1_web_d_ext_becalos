@@ -41,3 +41,21 @@ const frutas = ["Manzana", "Platano", "Sandía", "Pera"];
 
 frutas.forEach(paraElForEach);
 
+
+/* ¿Que pasa si necesito el valor que estoy esperando para poder continuar? */
+
+// Usando async/await
+async function ejecutarConsulta() {
+    try {
+        /* Esto obliga a "esperar" el resultado de la promesa */
+        const resultado = await obtenerDestino("Londres");
+        notificarUsuario(resultado);
+    } catch (error) {
+        manejarError(error);
+    } finally {
+        console.log("Siempre me ejecuto");
+    }
+}
+
+// Ejecutar la función asíncrona
+ejecutarConsulta();
