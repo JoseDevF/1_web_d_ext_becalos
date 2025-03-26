@@ -1,0 +1,18 @@
+[
+    {
+        "nombre": "Viaje de la familia Hernández",
+        "origen": "CDMX",
+        "destino": "Guadalajara",
+        "duracion": 15,
+        "pais": "México",
+        "tareas": []
+    },
+    {
+        "nombre": "Viaje de la familia Hernández",
+        "origen": "CDMX",
+        "destino": "Guadalajara",
+        "duracion": 15,
+        "pais": "México",
+        "tareas": []
+    }
+]
