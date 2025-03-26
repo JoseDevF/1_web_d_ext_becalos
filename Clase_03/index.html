@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificador de Viajes</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Planificador de Viajes</h1>
+    </header>
+    <main>
+        <h2>Crear nuevo viaje</h2>
+        <input type="text" id="nombre" placeholder="Nombre del viaje">
+        <input type="text" id="origen" placeholder="Origen">
+        <input type="text" id="destino" placeholder="Destino">
+        <input type="number" id="duracion" placeholder="Duración en días">
+        <input type="text" id="pais" placeholder="País">
+        <button onclick="">Agregar viaje</button> <!-- Crear un viaje -->
+
+        <h2>Viajes registrados</h2>
+        <div id="lista-viajes"></div>
+    </main>
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal">
+            <p id="modal-text"></p>
+            <button onclick="">Cerrar</button> <!-- Cerrar la modal -->
+        </div>
+    </div>
+
+    <div id="prompt-modal" class="modal-overlay">
+        <div class="modal">
+            <p>Ingresa una nueva tarea para este viaje:</p>
+            <input type="text" id="prompt-input">
+            <div class="modal-buttons">
+                <button onclick="">Aceptar</button> <!-- Confirmar -->
+                <button onclick="" class="cancel">Cancelar</button> <!-- Cerrar -->
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
