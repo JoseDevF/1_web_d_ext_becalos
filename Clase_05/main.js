@@ -9,7 +9,7 @@ function timer(n) {
     console.log(n);
 }
 
-console.log(timer(5));
+/* console.log(timer(5)); */
 
 function sum(n) {
     if (n === 10) return 0;
@@ -31,11 +31,21 @@ const arrayN = [1,
     [4,
         [5],
         [6,
-            [10]
+            [10, 5]
         ]
     ]
 ];
 
 function sumArr(arr) {
-
+    let sum = 0;
+    for (let item of arr) {
+        if (Array.isArray(item)) {
+            sum += sumArr(item);
+        } else {
+            sum += item;
+        }
+    }
+    return sum;
 }
+
+console.log(sumArr(arrayN));
