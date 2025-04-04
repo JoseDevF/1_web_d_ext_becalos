@@ -132,4 +132,47 @@ function lengthOfLongest(str) {
     return maxLength;
 }
 
-console.log(lengthOfLongest("dfghdfghdfgddddfg12fggfgfhdfgh1234"))
+/* Implementación con Array */
+function lengthOfLongestArr(str) {
+    let seen = []; // Usamos array en lugar de Set
+    let left = 0, maxLength = 0;
+
+    for (let right = 0; right < str.length; right++) {
+        const currentChar = str[right];
+
+        // Si ya está en el array, removemos caracteres desde left
+        while (seen.includes(currentChar)) {
+            seen.shift(); // eliminamos el primero
+            left++;       // movemos la ventana a la derecha
+        }
+
+        seen.push(currentChar); // agregamos el nuevo carácter
+        maxLength = Math.max(maxLength, seen.length);
+    }
+
+    return maxLength;
+}
+
+/* Creamos un array enorme */
+let bigArray = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 10000));
+
+/* Probamos la implementación con Array */
+console.time("Implementacion Array")
+console.log(lengthOfLongestArr(bigArray))
+console.timeEnd("Implementacion Array")
+
+/* Probamos la implementación con Set */
+console.time("Implementacion Set")
+console.log(lengthOfLongest(bigArray))
+console.timeEnd("Implementacion Set")
+
+
+/* Probamos la implementación Merge Sort*/
+console.time("Implementacion Merge Sort")
+console.log(mergeSort(bigArray))
+console.timeEnd("Implementacion Merge Sort")
+
+/* Probamos la implementación Nativa Sort */
+console.time("Implementacion Nativa Sort")
+console.log(bigArray.sort())
+console.timeEnd("Implementacion Nativa Sort")
