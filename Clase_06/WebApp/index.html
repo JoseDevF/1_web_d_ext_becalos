@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3: Merge Sort + Sliding Window</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+</head>
+
+<body>
+    <h1>⚙️ Clase 3 Interactiva – Merge Sort + Sliding Window</h1>
+
+    <!-- Merge Sort Visual -->
+    <section>
+        <h2>🧩 Visualización de Merge Sort</h2>
+        <input class="input-box" id="mergeInput" placeholder="Ej: 8,4,6,2,9,1" />
+        <button class="btn" onclick="startMergeSort()">Iniciar Merge Sort</button>
+        <div class="array" id="mergeArray"></div>
+        <div class="output" id="mergeOutput"></div>
+    </section>
+
+
+    <!-- Sliding Window Visual -->
+    <section>
+        <h2>📊 Visualización de Sliding Window</h2>
+        <input class="input-box" id="windowInput" placeholder="Ej: 2,4,6,8,10" />
+        <input class="input-box" id="windowSize" type="number" placeholder="Tamaño de ventana (k)" />
+        <button class="btn" onclick="startSlidingWindow()">Calcular Suma Máxima</button>
+        <div class="array" id="windowVisual"></div>
+        <div class="output" id="windowOutput"></div>
+    </section>
+
+    <!-- Sliding Window Substring -->
+    <section>
+        <h2>🔠 Substring más largo sin repetir</h2>
+        <input class="input-box" id="substringInput" placeholder="Ingresa una cadena..." />
+        <button class="btn" onclick="startSubstringWindow()">Evaluar</button>
+        <div class="array" id="substringVisual"></div>
+        <div class="output" id="substringOutput"></div>
+    </section>
+</body>
+
+</html>

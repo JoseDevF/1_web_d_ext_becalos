@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    padding: 2rem;
+    margin: 0;
+}
+
+h1,
+h2 {
+    color: #2c3e50;
+}
+
+section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.output {
+    background: #222;
+    color: #0f0;
+    padding: 1rem;
+    font-family: monospace;
+    height: 150px;
+    overflow-y: auto;
+    margin-top: 1rem;
+    white-space: pre-line;
+    border-radius: 8px;
+}
+
+.btn {
+    background: #2c3e50;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.array {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.box {
+    padding: 10px 15px;
+    background: #ecf0f1;
+    border-radius: 8px;
+    position: relative;
+    font-weight: bold;
+}
+
+.pointer {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.pointer-bottom {
+    top: auto;
+    bottom: -25px;
+}
+
+.input-box {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+}
+
+.call-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.call-box {
+    width: 220px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.return-box {
+    background-color: #2ecc71;
+}
+
+.compare-box {
+    padding: 10px 15px;
+    background: #ecf0f1;
+    border-radius: 8px;
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.compare-left {
+    border: 2px solid #3498db;
+    background-color: #d6eaf8;
+}
+
+.compare-right {
+    border: 2px solid #e74c3c;
+    background-color: #f5b7b1;
+}
+
+.matched {
+    background-color: #2ecc71 !important;
+}
+
+.not-matched {
+    background-color: #e74c3c !important;
+    color: white;
+}

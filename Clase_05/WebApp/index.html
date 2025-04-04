@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2: Recursión + Two Pointers</title>
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>🧠 Clase 2 Interactiva – Recursión + Two Pointers</h1>
+
+    <!-- Recursión Visualización -->
+    <section>
+        <h2>🔄 Visualización de pila de llamadas</h2>
+        <button class="btn" onclick="runCountdown()">Iniciar countdown(5)</button>
+        <div class="call-stack" id="countdownOutput"></div>
+    </section>
+
+    <!-- Two Pointers Visual -->
+    <section>
+        <h2>🔀 Visualización de Two Pointers</h2>
+        <div class="array" id="arrayBox"></div>
+        <button class="btn" onclick="movePointers()">Mover Punteros</button>
+    </section>
+
+    <!-- Palíndromo Visual -->
+    <section>
+        <h2>🔍 Verificador de Palíndromos</h2>
+        <input class="input-box" id="palInput" placeholder="Ej. radar, oso, casa..." />
+        <button class="btn" onclick="checkPalindrome()">Verificar</button>
+        <div class="array" id="palindromeVisual"></div>
+        <div class="output" id="palOutput"></div>
+    </section>
+
+    <!-- Inversión Visual -->
+    <section>
+        <h2>↔️ Inversión de String (Two Pointers)</h2>
+        <input class="input-box" id="revInput" placeholder="Escribe un texto..." />
+        <button class="btn" onclick="reverseString()">Invertir</button>
+        <div class="array" id="reverseVisual"></div>
+        <div class="output" id="revOutput"></div>
+    </section>
+</body>
+
+</html>
