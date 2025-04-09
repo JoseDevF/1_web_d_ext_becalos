@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de Recetas Inteligente</title>
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" defer src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="flex-container">
+            <i class='bx bx-md bx-restaurant color-gray m-0'></i>
+            <h1 class="m-0">Buscador de Recetas Inteligente</h1>
+        </div>
+        <div class="flex-container">
+            <input autocomplete="off" class="mt-3" type="text" id="ingredient-input"
+                placeholder="Escribe un ingrediente..." />
+        </div>
+        <div id="autocomplete-list"></div>
+        <div class="flex-container">
+            <button class="flex-container" id="suggestion-btn">
+                <p>Sugerencia inteligente</p>
+            </button>
+        </div>
+    </header>
+
+    <section id="filters">
+        <label for="sort">Ordenar por:</label>
+        <select id="sort">
+            <option value="" disabled selected>Selecciona un criterio</option>
+            <option value="time">Tiempo</option>
+            <option value="name">Nombre</option>
+        </select>
+    </section>
+
+    <main>
+        <section id="categories">
+            <!-- DFS/BFS tree de categorías -->
+        </section>
+
+        <section class="flex-container gap-5 mt-3" id="recipes">
+            <!-- Tarjetas de recetas -->
+        </section>
+    </main>
+
+    <aside class="flex-container flex-col">
+        <div class="flex-container justify-start">
+            <img src="./assets/bar-chart-alt-2-solid-24.png" alt="">
+            <h2>Análisis</h2>
+        </div>
+        <p id="analysis">Usaste 0 ingredientes esta semana.</p>
+        <div class="flex-container">
+            <img src="./assets/pin-solid-24.png" alt="">
+            <h3>Sugerencias recientes</h3>
+        </div>
+        <ul id="recent-suggestions">
+            <!-- Sliding window -->
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Hecho con <3 para estudiantes de JS</p>
+    </footer>
+</body>
+
+</html>
