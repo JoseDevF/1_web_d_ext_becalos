@@ -72,7 +72,7 @@ function actualizarHistorial(ingrediente) {
 // FUNCIÓN: Mostrar top ingredientes populares recientes (Sliding Window real)
 // =============================================
 
-// Sliding Window sobre últimas 5 búsquedas para encontrar ingredientes más frecuentes
+// TODO: Sliding Window sobre últimas 5 búsquedas para encontrar ingredientes más frecuentes
 function actualizarSugerenciasRecientes() {
 
 }
